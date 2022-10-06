@@ -87,9 +87,6 @@
     <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\VAOLoader.cpp" />
     <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\WorldGenerator.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram.cd" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
