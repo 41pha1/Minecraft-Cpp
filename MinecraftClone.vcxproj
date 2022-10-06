@@ -19,73 +19,72 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\Bitarray.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\Block.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\BlockPalette.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\BlockShader.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\BoundingBoxRenderer.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\BoundingBoxShader.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\Camera.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\Chunk.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\ChunkProvider.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\ChunkRenderer.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\Game.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\ImageLoader.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\Input.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\lodepng.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\MasterRenderer.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\MinecraftWorldLoader.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\Mouse.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\NBTData.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\NBTParser.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\Octree.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\OctreeElement.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\OctreeLeaf.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\OctreeNode.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\Player.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\ShaderProgram.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\Simplex.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\Subchunk.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\Util.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\VAO.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\VAOLoader.h" />
-    <ClInclude Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\WorldGenerator.h" />
-    <ClInclude Include="resource.h" />
+    <ClCompile Include="src\Bitarray.cpp" />
+    <ClCompile Include="src\Block.cpp" />
+    <ClCompile Include="src\BlockPalette.cpp" />
+    <ClCompile Include="src\BlockShader.cpp" />
+    <ClCompile Include="src\BoundingBoxRenderer.cpp" />
+    <ClCompile Include="src\BoundingBoxShader.cpp" />
+    <ClCompile Include="src\Camera.cpp" />
+    <ClCompile Include="src\Chunk.cpp" />
+    <ClCompile Include="src\ChunkProvider.cpp" />
+    <ClCompile Include="src\ChunkRenderer.cpp" />
+    <ClCompile Include="src\Game.cpp" />
+    <ClCompile Include="src\glad.c" />
+    <ClCompile Include="src\ImageLoader.cpp" />
+    <ClCompile Include="src\Input.cpp" />
+    <ClCompile Include="src\lodepng.cpp" />
+    <ClCompile Include="src\MasterRenderer.cpp" />
+    <ClCompile Include="src\MinecraftClone.cpp" />
+    <ClCompile Include="src\MinecraftWorldLoader.cpp" />
+    <ClCompile Include="src\Mouse.cpp" />
+    <ClCompile Include="src\NBTData.cpp" />
+    <ClCompile Include="src\NBTParser.cpp" />
+    <ClCompile Include="src\Octree.cpp" />
+    <ClCompile Include="src\OctreeElement.cpp" />
+    <ClCompile Include="src\OctreeLeaf.cpp" />
+    <ClCompile Include="src\OctreeNode.cpp" />
+    <ClCompile Include="src\Player.cpp" />
+    <ClCompile Include="src\ShaderProgram.cpp" />
+    <ClCompile Include="src\Simplex.cpp" />
+    <ClCompile Include="src\Subchunk.cpp" />
+    <ClCompile Include="src\Util.cpp" />
+    <ClCompile Include="src\VAO.cpp" />
+    <ClCompile Include="src\VAOLoader.cpp" />
+    <ClCompile Include="src\WorldGenerator.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\vclib\GL\GLAD\src\glad.c" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\Bitarray.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\Block.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\BlockPalette.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\BlockShader.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\BoundingBoxRenderer.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\BoundingBoxShader.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\Camera.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\Chunk.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\ChunkProvider.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\ChunkRenderer.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\Game.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\ImageLoader.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\Input.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\lodepng.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\MasterRenderer.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\MinecraftClone.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\MinecraftWorldLoader.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\Mouse.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\NBTData.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\NBTParser.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\Octree.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\OctreeElement.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\OctreeLeaf.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\OctreeNode.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\Player.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\ShaderProgram.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\Simplex.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\Subchunk.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\Util.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\VAO.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\VAOLoader.cpp" />
-    <ClCompile Include="..\..\..\Downloads\MinecraftClone-main\MinecraftClone-main\src\WorldGenerator.cpp" />
+    <ClInclude Include="src\Bitarray.h" />
+    <ClInclude Include="src\Block.h" />
+    <ClInclude Include="src\BlockPalette.h" />
+    <ClInclude Include="src\BlockShader.h" />
+    <ClInclude Include="src\BoundingBoxRenderer.h" />
+    <ClInclude Include="src\BoundingBoxShader.h" />
+    <ClInclude Include="src\Camera.h" />
+    <ClInclude Include="src\Chunk.h" />
+    <ClInclude Include="src\ChunkProvider.h" />
+    <ClInclude Include="src\ChunkRenderer.h" />
+    <ClInclude Include="src\Game.h" />
+    <ClInclude Include="src\ImageLoader.h" />
+    <ClInclude Include="src\Input.h" />
+    <ClInclude Include="src\lodepng.h" />
+    <ClInclude Include="src\MasterRenderer.h" />
+    <ClInclude Include="src\MinecraftWorldLoader.h" />
+    <ClInclude Include="src\Mouse.h" />
+    <ClInclude Include="src\NBTData.h" />
+    <ClInclude Include="src\NBTParser.h" />
+    <ClInclude Include="src\Octree.h" />
+    <ClInclude Include="src\OctreeElement.h" />
+    <ClInclude Include="src\OctreeLeaf.h" />
+    <ClInclude Include="src\OctreeNode.h" />
+    <ClInclude Include="src\Player.h" />
+    <ClInclude Include="src\ShaderProgram.h" />
+    <ClInclude Include="src\Simplex.h" />
+    <ClInclude Include="src\Subchunk.h" />
+    <ClInclude Include="src\Util.h" />
+    <ClInclude Include="src\VAO.h" />
+    <ClInclude Include="src\VAOLoader.h" />
+    <ClInclude Include="src\WorldGenerator.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -178,6 +177,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>C:\GL\GLAD\include;C:\GL\GLFWx32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
