@@ -86,6 +86,7 @@ char Game::getBlock(int x, int y, int z)
 
 bool Game::isChunkLoaded(int cx, int cz)
 {
+	std::lock_guard<std::mutex> guard(chunks_mutex);
 	if(chunks.count(cx) == 0)
 		return false;
 	if(chunks[cx].count(cz) == 0)
@@ -220,12 +221,9 @@ Chunk* Game::getChunk(int cx, int cz)
 {
 	if (isChunkLoaded(cx, cz)) 
 	{
-		if (chunks[cx][cz] == NULL)
-			std::cerr << "null wtf" << std::endl;
-
+		std::lock_guard<std::mutex> guard(chunks_mutex);
 		return chunks[cx][cz];
 	}
-
 
 	return invalidChunk;
 }
@@ -235,7 +233,7 @@ void Game::update(float dt)
 	camera->update(player);
 	player->move(dt);
 	loadChunks();
-	unloadChunks();
+	//unloadChunks();
 	updateRenderQueue();
 }
 

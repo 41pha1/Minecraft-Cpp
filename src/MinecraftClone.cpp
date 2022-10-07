@@ -25,7 +25,7 @@ Input *input;
 Mouse * mouse;
 std::map<int, bool> keyboard;
 
-const int width = 3000, height = 1200;
+const int width = 1500, height = 900;
 const int FPS = 60;
 const int TPS = 20;
 

@@ -5,6 +5,7 @@
 #include <map>
 #include <string>
 #include <vector>
+#include <mutex>
 
 #include "Chunk.h"
 
@@ -20,6 +21,7 @@ public:
 	static const int RENDER_DISTANCE = 16;
 
 	std::map<int, std::map<int, Chunk*>> chunks = {};
+	std::mutex chunks_mutex;
 	std::vector<Chunk*> renderQueue = {};
 	std::vector<glm::vec3> updateQueue;
 	std::string worldFolder;
