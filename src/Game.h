@@ -17,7 +17,7 @@ class WorldGenerator;
 class Game
 {
 public:
-	static const int RENDER_DISTANCE = 8;
+	static const int RENDER_DISTANCE = 16;
 
 	std::map<int, std::map<int, Chunk*>> chunks = {};
 	std::vector<Chunk*> renderQueue = {};

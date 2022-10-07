@@ -47,8 +47,14 @@ bool Player::isColliding()
 
 void Player::setOnGround()
 {
-	while(!isColliding())
+	pos.y = 256;
+	while (!isColliding()) 
+	{
 		pos.y--;
+		if (pos.y < 0)
+			break;
+	}
+
 	while(isColliding())
 		pos.y++;
 }

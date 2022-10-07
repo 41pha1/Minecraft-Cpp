@@ -53,7 +53,7 @@ void MasterRenderer::render(Game* game)
 	if(game->camera->renderWireframe)
 		glPolygonMode( GL_FRONT_AND_BACK, GL_LINE );
 	else
-		glPolygonMode( GL_FRONT, GL_FILL );
+		glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 
 	glUseProgram(blockShader->ProgramID);
 	GLuint SkyColor = glGetUniformLocation(blockShader->ProgramID, "skyColor");

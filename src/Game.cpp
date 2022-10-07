@@ -54,7 +54,7 @@ Game::Game(Camera *  cam, std::string worldFolder_)
 		}
 	}
 	std::cout << "Done!" << std::endl;
-	//player->setOnGround();
+	player->setOnGround();
 	camera = cam;
 	chunkProvider = new ChunkProvider(this);
 }
@@ -218,8 +218,14 @@ void Game::unloadChunks()
 
 Chunk* Game::getChunk(int cx, int cz)
 {
-	if(isChunkLoaded(cx, cz))
+	if (isChunkLoaded(cx, cz)) 
+	{
+		if (chunks[cx][cz] == NULL)
+			std::cerr << "null wtf" << std::endl;
+
 		return chunks[cx][cz];
+	}
+
 
 	return invalidChunk;
 }

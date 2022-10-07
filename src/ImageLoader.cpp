@@ -1,8 +1,8 @@
 #include "ImageLoader.h"
 
 #include <glm/detail/type_vec2.hpp>
-#include <iostream>
 #include <string>
+#include <iostream>
 #include <vector>
 
 #include "Block.h"
@@ -26,9 +26,8 @@ void ImageLoader::loadTextures()
 
 void ImageLoader::generateTextureAtlas()
 {
-
 	int amount = sizeof(blockTextures)/sizeof(blockTextures[0]);
-	float atlasData[width*height*4];
+	float* atlasData = new float[width*height*4];
 
 	for(int x = 0; x < width*height*4; x++)
 		atlasData[x] = 0;
@@ -62,8 +61,8 @@ void ImageLoader::generateTextureAtlas()
 				}
 			}
 		}
-	}
-
+	} 
+	
 	GLuint textureID;
 	glGenTextures(1, &textureID);
 	glBindTexture(GL_TEXTURE_2D, textureID);

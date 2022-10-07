@@ -2,6 +2,11 @@
 
 #include "Game.h"
 
+#ifdef _MSC_VER
+#  include <intrin.h>
+#  define __builtin_popcount __popcnt
+#endif
+
 float ** Block::vertices;
 float ** Block::normals;
 float ** Block::uvs;
