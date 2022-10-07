@@ -1,7 +1,7 @@
 #ifndef CHUNKPROVIDER_H_
 #define CHUNKPROVIDER_H_
 
-#include <windows.h>
+#include <winnt.h>
 #include <array>
 #include <map>
 #include <vector>

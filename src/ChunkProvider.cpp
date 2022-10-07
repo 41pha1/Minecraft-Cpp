@@ -1,6 +1,7 @@
 #include "ChunkProvider.h"
 
-#include <windows.h>
+#include <winbase.h>
+#include <windef.h>
 #include <algorithm>
 #include <iostream>
 #include <string>

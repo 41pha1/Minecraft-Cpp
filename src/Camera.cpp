@@ -55,9 +55,9 @@ void Camera::calculateLookingAt(glm::vec3 dir)
     int stepZ = sgn(dir.z);
     glm::vec3 tMax(intbound(pos.x, dir.x), intbound(pos.y, dir.y), intbound(pos.z, dir.z));
     glm::vec3 tDelta((float)stepX / dir.x, (float)stepY / dir.y, (float)stepZ / dir.z);
-    float faceX = 0;
-    float faceY = 0;
-    float faceZ = 0;
+    float faceX;
+    float faceY;
+    float faceZ;
 
     blockInReach = false;
 

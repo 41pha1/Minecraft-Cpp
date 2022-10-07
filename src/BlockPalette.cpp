@@ -3,11 +3,6 @@
 #include <iostream>
 #include "Chunk.h"
 
-#ifdef _MSC_VER
-#  include <intrin.h>
-#  define __builtin_clz __lzcnt
-#endif
-
 BlockPalette::BlockPalette(int size_)
 {
 	size = size_;

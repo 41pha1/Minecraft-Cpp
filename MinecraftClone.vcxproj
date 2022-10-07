@@ -19,6 +19,39 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Bitarray.h" />
+    <ClInclude Include="src\Block.h" />
+    <ClInclude Include="src\BlockPalette.h" />
+    <ClInclude Include="src\BlockShader.h" />
+    <ClInclude Include="src\BoundingBoxRenderer.h" />
+    <ClInclude Include="src\BoundingBoxShader.h" />
+    <ClInclude Include="src\Camera.h" />
+    <ClInclude Include="src\Chunk.h" />
+    <ClInclude Include="src\ChunkProvider.h" />
+    <ClInclude Include="src\ChunkRenderer.h" />
+    <ClInclude Include="src\Game.h" />
+    <ClInclude Include="src\ImageLoader.h" />
+    <ClInclude Include="src\Input.h" />
+    <ClInclude Include="src\lodepng.h" />
+    <ClInclude Include="src\MasterRenderer.h" />
+    <ClInclude Include="src\MinecraftWorldLoader.h" />
+    <ClInclude Include="src\Mouse.h" />
+    <ClInclude Include="src\NBTData.h" />
+    <ClInclude Include="src\NBTParser.h" />
+    <ClInclude Include="src\Octree.h" />
+    <ClInclude Include="src\OctreeElement.h" />
+    <ClInclude Include="src\OctreeLeaf.h" />
+    <ClInclude Include="src\OctreeNode.h" />
+    <ClInclude Include="src\Player.h" />
+    <ClInclude Include="src\ShaderProgram.h" />
+    <ClInclude Include="src\Simplex.h" />
+    <ClInclude Include="src\Subchunk.h" />
+    <ClInclude Include="src\Util.h" />
+    <ClInclude Include="src\VAO.h" />
+    <ClInclude Include="src\VAOLoader.h" />
+    <ClInclude Include="src\WorldGenerator.h" />
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="src\Bitarray.cpp" />
     <ClCompile Include="src\Block.cpp" />
     <ClCompile Include="src\BlockPalette.cpp" />
@@ -52,39 +85,6 @@
     <ClCompile Include="src\VAO.cpp" />
     <ClCompile Include="src\VAOLoader.cpp" />
     <ClCompile Include="src\WorldGenerator.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="src\Bitarray.h" />
-    <ClInclude Include="src\Block.h" />
-    <ClInclude Include="src\BlockPalette.h" />
-    <ClInclude Include="src\BlockShader.h" />
-    <ClInclude Include="src\BoundingBoxRenderer.h" />
-    <ClInclude Include="src\BoundingBoxShader.h" />
-    <ClInclude Include="src\Camera.h" />
-    <ClInclude Include="src\Chunk.h" />
-    <ClInclude Include="src\ChunkProvider.h" />
-    <ClInclude Include="src\ChunkRenderer.h" />
-    <ClInclude Include="src\Game.h" />
-    <ClInclude Include="src\ImageLoader.h" />
-    <ClInclude Include="src\Input.h" />
-    <ClInclude Include="src\lodepng.h" />
-    <ClInclude Include="src\MasterRenderer.h" />
-    <ClInclude Include="src\MinecraftWorldLoader.h" />
-    <ClInclude Include="src\Mouse.h" />
-    <ClInclude Include="src\NBTData.h" />
-    <ClInclude Include="src\NBTParser.h" />
-    <ClInclude Include="src\Octree.h" />
-    <ClInclude Include="src\OctreeElement.h" />
-    <ClInclude Include="src\OctreeLeaf.h" />
-    <ClInclude Include="src\OctreeNode.h" />
-    <ClInclude Include="src\Player.h" />
-    <ClInclude Include="src\ShaderProgram.h" />
-    <ClInclude Include="src\Simplex.h" />
-    <ClInclude Include="src\Subchunk.h" />
-    <ClInclude Include="src\Util.h" />
-    <ClInclude Include="src\VAO.h" />
-    <ClInclude Include="src\VAOLoader.h" />
-    <ClInclude Include="src\WorldGenerator.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

@@ -1,6 +1,6 @@
 #include "MinecraftWorldLoader.h"
 
-#include <ctime>
+#include <sys/time.h>
 #include <zconf.h>
 #include <zlib.h>
 #include <algorithm>
@@ -16,11 +16,6 @@
 #include "NBTData.h"
 #include "NBTParser.h"
 #include "Subchunk.h"
-
-#ifdef _MSC_VER
-#  include <intrin.h>
-#  define __builtin_clz __lzcnt
-#endif
 
 std::map<std::string, int> Block::nameToID;
 
@@ -171,7 +166,7 @@ BlockPalette * MinecraftWorldLoader::loadSection(NBTData * section)
 	std::vector<std::string> blockIDs(palette.size());
 	std::transform(palette.begin(), palette.end(), blockIDs.begin(), [](NBTData * data) -> std::string { return *(std::string*) data->get("Name")->data; });
 
-	int bitsPerIndex = std::max(4, 32 -(int)(__builtin_clz(palette.size() - 1)));
+	int bitsPerIndex = std::max(4, 32 -__builtin_clz(palette.size()-1));
 	int indicesPerLong = int(64 / bitsPerIndex);
 
 	int x = 0, z = 0, y = 0;
@@ -218,7 +213,7 @@ BlockPalette * MinecraftWorldLoader::loadSection(NBTData * section)
 
 std::vector<char> MinecraftWorldLoader::inflateZlib(std::vector<char>& bytes)
 {
-    char* b = new char[bytes.size()];
+    char b[bytes.size()];
     std::copy(bytes.begin(), bytes.end(), b);
 
 	char c[500000]; //TODO
