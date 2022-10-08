@@ -175,6 +175,7 @@ void Game::loadChunks()
 		int cx = chunk->cx;
 		int cz = chunk->cz;
 
+		std::lock_guard<std::mutex> guard(chunks_mutex);
 		chunks[cx][cz] = chunk;
 	}
 	chunkProvider->availableChunks.clear();
