@@ -13,106 +13,115 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\code">
+      <UniqueIdentifier>{2ff616cf-4321-4cd3-ba80-627a36cb23ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shaders">
+      <UniqueIdentifier>{c1feab1c-06e2-455d-a90a-dd1cbc1fa196}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib">
+      <UniqueIdentifier>{6c799d5f-d60c-4e24-8882-c681c6877831}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\glad.c">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
     <ClCompile Include="src\Bitarray.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\Block.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\BlockPalette.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\BlockShader.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\BoundingBoxRenderer.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\BoundingBoxShader.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\Camera.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\Chunk.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\ChunkProvider.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\ChunkRenderer.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\Game.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\ImageLoader.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\Input.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\lodepng.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\MasterRenderer.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\MinecraftClone.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\MinecraftWorldLoader.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\Mouse.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\NBTData.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\NBTParser.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\Octree.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\OctreeElement.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\OctreeLeaf.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\OctreeNode.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\Player.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\ShaderProgram.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\Simplex.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\Subchunk.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\Util.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\VAO.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\VAOLoader.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
     <ClCompile Include="src\WorldGenerator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\glad.c">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\code</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -209,5 +218,19 @@
     <ClInclude Include="src\WorldGenerator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\shaders\boundingboxFragment.glsl">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="res\shaders\boundingboxVertex.glsl">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="res\shaders\fragmentShader.glsl">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="res\shaders\vertexShader.glsl">
+      <Filter>Source Files\shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -31,7 +31,7 @@ struct requestedMesh
 class ChunkProvider
 {
 public:
-	static const int MAX_THREADS = 8;
+	static const int MAX_THREADS = 4;
 
 	Game * game;
 	std::array<threadInfo, MAX_THREADS> threads;

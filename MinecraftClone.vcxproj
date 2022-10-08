@@ -86,6 +86,12 @@
     <ClInclude Include="src\VAOLoader.h" />
     <ClInclude Include="src\WorldGenerator.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="res\shaders\boundingboxFragment.glsl" />
+    <None Include="res\shaders\boundingboxVertex.glsl" />
+    <None Include="res\shaders\fragmentShader.glsl" />
+    <None Include="res\shaders\vertexShader.glsl" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>

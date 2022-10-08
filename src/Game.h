@@ -18,7 +18,7 @@ class WorldGenerator;
 class Game
 {
 public:
-	static const int RENDER_DISTANCE = 16;
+	static const int RENDER_DISTANCE = 12;
 
 	std::map<int, std::map<int, Chunk*>> chunks = {};
 	std::mutex chunks_mutex;

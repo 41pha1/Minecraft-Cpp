@@ -50,7 +50,10 @@ void Chunk::setBlock(int x, int y, int z, int id)
 	if(!valid)
 		return;
 
-	if(x < 0 || x >= SIZE || y < 0 || y >= SIZE * HEIGHT || z < 0 || z >= SIZE)
+	if (y < 0 || y >= SIZE * HEIGHT)
+		return;
+
+	if(x < 0 || x >= SIZE || z < 0 || z >= SIZE)
 		return game->setBlock(cx * SIZE + x, y, cz * SIZE + z, id);
 
 	int cy = y / SIZE;
